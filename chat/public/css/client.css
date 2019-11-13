@@ -1,0 +1,66 @@
+.user{
+      width:15%;
+      height:10%;
+      border-style: groove;
+      border-width: 5px;
+      border-color: cyan;
+      background-color:lightgray;
+      margin:auto;
+  }
+h1{
+      width:100%;
+      height:100px;
+      border-style: groove;
+      border-width: 5px;
+      border-color: black;
+      text-align: center;
+  }
+.buttons{
+      border-radius:5px;
+      background-color:white;
+}
+.page {
+      display: none;
+}
+.chatBox {
+      width:100%;
+      height:50%;
+      border-style: groove;
+      border-width: 5px;
+      border-color: lightskyblue;
+      text-align: center;
+}
+.admin{
+      display:none;
+}
+.pmbox{
+      display:none;
+      width:20%;
+      border-style: groove;
+      border-width: 5px;
+      border-color: lightskyblue;
+      height:50%;
+      text-align: center;
+}
+.userbox{
+      width:20%;
+      border-style: groove;
+      border-width: 5px;
+      border-color: lightskyblue;
+      height:30%;
+      text-align: center;
+}
+.roombox{
+      width:auto;
+      border-style: groove;
+      border-width: 5px;
+      border-color: lightskyblue;
+      height:30%;
+      text-align: center;
+}
+.mod{
+      display:none;
+}
+.modBox{
+      display:none;
+}
