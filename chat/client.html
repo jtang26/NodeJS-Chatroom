@@ -1,0 +1,60 @@
+<!-- Source for socket.io and html code https://socket.io/get-started/chat/ -->
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-eval'; img-src 'self'"> -->
+    <meta charset="UTF-8">
+    <title>Socket.IO chat</title>
+    <link rel="stylesheet" type="text/css" href="public/css/client.css" />
+  </head>
+  <body>
+    <h1>Welcome User:</h1>
+    <div id="user" class="user">
+        <p>
+          <label for="createUser">Username:</label>
+            <input type="text" name="username" id="createUser" required />
+        </p>
+        <p>
+          <input type="submit" value="Login" class="buttons" id="loginButton"/>
+        </p>
+    </div>
+    <div id = 'page' class='page'>
+        <p id='hello'>Hi </p>
+        <p id='curRoom'>Current Room: </p>
+        <input type="text" name="chatName" id ="roomName"/>
+        <input type="submit" value="createChat" class="buttons" id="createChatButton"/>
+        <div class="userbox">
+          <p>Current Users in Room</p>
+        <ul id = 'usernameList'></ul>
+      </div>
+        <div class="roombox">
+          <p>List of Rooms to Join</p>
+        <ul id = 'roomsList'></ul>
+      </div>
+        PM User(Please search the user to reply/send a message!): <input type="text" name="ban" id="pmsearch"><br>
+        <input type="submit" value="Private Message" class="buttons" id="pmButton"/>
+        <div id="pmbox" class = "pmbox">
+          <p>Private Messages</p>
+          <ul id = "PM"></ul>
+        </div>
+        <div id = "administrator" class = "admin">
+          Ban User: <input type="text" name="ban" id="banned"><br>
+          <input type="submit" value="Ban" class="buttons" id="BanUserButton"/>
+          Kick User: <input type="text" name="kick" id ="kicked"><br>
+          <input type="submit" value="Kick" class="buttons" id="KickUserButton"/>
+        </div>
+        <div id = "modBox" class="modBox">
+            Set Mod: <input type="text" name="ban" id="modInput"><br>
+            <input type="submit" value="Mod" class="buttons" id="ModButton"/>
+        </div>
+        <div class="chatBox">
+          <ul id = "messageBox"></ul>
+          <input type="text" name="chatName" id ="chatting"/>
+          <input type="submit" value="Send Message" class="buttons" id="chatSubmitButton"/>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="public/js/client.js"></script> 
+  </body>
+</html>
